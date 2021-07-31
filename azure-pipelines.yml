@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: July 31
+  demands:
+  - agent.name -equals Yatin
 
 steps:
 - task: NodeTool@0
